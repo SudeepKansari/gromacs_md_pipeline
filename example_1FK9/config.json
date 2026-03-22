@@ -1,0 +1,12 @@
+{
+  "protein_pdb": "input.pdb",
+  "ligand_resname": "EFZ",
+  "box_type": "Oct", 
+  "box_distance": 10.0,
+  "temperature": 300,
+  "pressure": 1.0,
+  "nvt_steps": 50000,
+  "npt_steps": 50000,
+  "md_steps": 50000
+}
+
