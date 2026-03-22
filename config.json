@@ -1,0 +1,12 @@
+{
+  "protein_pdb": "<input_complex_file.pdb>",
+  "ligand_resname": "<LIG_RESNAME, CHECK PDB FILE UNDER HETATM, COL-4>",
+  "box_type": "Box or Oct", 
+  "box_distance": 10.0,
+  "temperature": 300,
+  "pressure": 1.0,
+  "nvt_steps": 50000,
+  "npt_steps": 50000,
+  "md_steps": 50000
+}
+
