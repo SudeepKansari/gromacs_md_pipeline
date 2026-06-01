@@ -56,7 +56,7 @@ Edit the configuration file with your simulation parameters:
 | `pressure` | Pressure in **bar** | `1.0` |
 | `nvt_steps` | NVT equilibration steps | `50000` |
 | `npt_steps` | NPT equilibration steps | `50000` |
-| `md_steps` | Production MD steps | `50000` |
+| `time_ns` | Production MD time in nanoseconds | `50` |
 
 ### 5. Run Pipeline
 
