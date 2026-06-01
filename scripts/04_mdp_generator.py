@@ -145,7 +145,7 @@ gen_vel                 = no
 
 #--- PRODUCTION MD ---
 dt = 2.0
-md_steps = int((cfg["time_ns"] * 1000000 / dt)
+md_steps = int((cfg["time_ns"] * 1000000 / dt))
              
 write("md.mdp", f"""
 title                   = Protein-ligand complex MD simulation
