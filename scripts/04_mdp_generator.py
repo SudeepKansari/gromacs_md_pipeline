@@ -144,12 +144,14 @@ gen_vel                 = no
 """)
 
 #--- PRODUCTION MD ---
-
+dt = 2.0
+md_steps = int((cfg["time_ns"] * 1000000 / dt)
+             
 write("md.mdp", f"""
 title                   = Protein-ligand complex MD simulation
 
 integrator              = md
-nsteps                  = {cfg["md_steps"]}
+nsteps                  = {md_steps}
 dt                      = 0.002
 
 nstenergy               = 5000
