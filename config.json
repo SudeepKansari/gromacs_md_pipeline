@@ -7,6 +7,6 @@
   "pressure": 1.0,
   "nvt_steps": 50000,
   "npt_steps": 50000,
-  "md_steps": 50000
+  "time_ns": 50
 }
 
