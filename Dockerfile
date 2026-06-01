@@ -129,11 +129,13 @@ ENV OMP_NUM_THREADS=1
 ENV OMPI_MCA_btl_vader_single_copy_mechanism=none
 
 # Create workspace
-RUN mkdir -p /home/dockeruser/workspace && chmod 755 /home/dockeruser/workspace
-WORKDIR /home/dockeruser/workspace
+RUN mkdir -p /home/dockeruser/workspace && chmod 755 /home/dockeruser/workspace && chown -R dockeruser:dockeruser /home/dockeruser
 
 # User-specific micromamba activation
 RUN echo 'eval "$(micromamba shell hook --shell bash)"' >> /home/dockeruser/.bashrc && \
     echo 'micromamba activate md' >> /home/dockeruser/.bashrc
+
+USER dockeruser
+WORKDIR /home/dockeruser/workspace
 
 CMD ["/bin/bash"]
